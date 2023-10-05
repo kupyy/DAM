@@ -1,5 +1,4 @@
 Algoritmo ejercicio10
-	total_personas<-0
 	menores<-0
 	edad_18_a_30<-0
 	edad_30_a_50<-0
@@ -9,7 +8,7 @@ Algoritmo ejercicio10
 		Escribir "Introduce una edad"
 		Leer edad
 		
-		si edad>0 Entonces
+		si edad=>0 Entonces
 			total_personas<-total_personas+1
 			si edad<18 Entonces
 				menores<-menores+1
@@ -26,6 +25,8 @@ Algoritmo ejercicio10
 			FinSi
 		FinSi
 	Hasta Que edad<0
+	
+	total_personas<-menores+edad_18_a_30+edad_30_a_50+mayor_50
 	
 	Escribir "Hay ", menores, " menores de edad, constituyen un ", menores/total_personas*100, "%"
 	Escribir "Hay ", edad_18_a_30, " personas entre 18 y 30 años, constituyen un ", edad_18_a_30/total_personas*100, "%"
