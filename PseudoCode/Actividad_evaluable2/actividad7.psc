@@ -26,6 +26,9 @@ Algoritmo salarios
 	Hasta Que salario<=0
 	
 	Escribir "El salario medio es de ", salario_total/total_empleados, "?"
+	Escribir "El número de empleados que cobran menos de 16000 ? es de ", menos16k, ", es decir, un ", menos16k/total_empleados*100,"%"
+	Escribir "El número de empleados que cobran entre 16000? y 25000? es de ", menos25k, ", es decir, un ", menos25k/total_empleados*100, "%"
+	Escribir "El número de empleados que cobran más de 25000? es de ", mas25k, ", es decir, un ", mas25k/total_empleados*100, "%"
 	
 FinAlgoritmo
 	
