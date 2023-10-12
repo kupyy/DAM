@@ -20,14 +20,20 @@ int main()
         case 1:
             for(contador=1; contador<=x;contador++){
                 if(contador%2!=0){
-                    printf("%d ", contador);
+                    printf("%d", contador);
+                    if(contador < x-1){
+                        printf(", ");
+                    }
                 }
             }
             break;
         case 2:
-            for(contador=1; contador<x;contador++){
+            for(contador=1; contador<=x;contador++){
                 if(contador%2==0){
                     printf("%d ", contador);
+                    if(contador < x){
+                        printf(", ");
+                    }
                 }
             }
             break;
