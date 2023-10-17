@@ -14,7 +14,7 @@ public class ej11 {
         //comparacion
         if( num1 == num2 ){
             System.out.println("Los números son iguales, su suma es " + (num1+num2));
-        }else if (num1 > num2){
+        }else if ( num1 > num2 ){
             System.out.println("El primer número(" + num1 + ") es mayor que el segundo(" + num2 + ")");
             System.out.println("Su división es " + (num1/num2));
         }else{
