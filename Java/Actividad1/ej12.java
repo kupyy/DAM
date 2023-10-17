@@ -15,7 +15,6 @@ public class ej12 {
         System.out.println("4 - Dividir");
         System.out.println("Introduzca una opción:");
         int opc = sc.nextInt();
-
         switch(opc){
             case 1:
                 System.out.println("Introduce un número:");
