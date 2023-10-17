@@ -15,7 +15,8 @@ public class ej3 {
 
             System.out.println("Introduce tu edad:");
             edad = sc.nextInt();
-
+            sc.nextLine();
+            
             System.out.println("Introduce tu localidad:");
             localidad = sc.nextLine();
 
