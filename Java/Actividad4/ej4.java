@@ -2,7 +2,7 @@ package Actividad4;
 
 public class ej4 {
     public static void main(String[] args){
-        int i=0, result=0;
+        int i=1, result=0;
 
         while(i<=50){
             result+=i;
