@@ -18,7 +18,11 @@ public class ej9 {
 
         
         do {
-            System.out.println(numeroMaquina);
+            if (numeroMaquina == 33) {
+                System.out.println(numeroMaquina+"?");
+            }else{
+                System.out.println(numeroMaquina);
+            }
             String condicion = sc.nextLine();
 
             if (condicion.equals("mayor")) {
@@ -29,6 +33,9 @@ public class ej9 {
                 numeroMaquina = ((rangoMax+rangoMin)/2);
             }else if (condicion.equals("igual")){
                 acierto=true;
+                if (numeroMaquina == 33) {
+                    System.out.println("Me repites ese numerín?");
+                }
             }    
         } while (!acierto);
 

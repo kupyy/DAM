@@ -10,7 +10,7 @@ public class ej1 {
     if (valorAscii <= 0 || valorAscii > 255) {
         System.out.println("Número no válido");
     }else{
-        char[] CaracterAscii = Character.toChars(valorAscii);
+        char CaracterAscii = (char) valorAscii;
         System.out.println(CaracterAscii);
     }
   }

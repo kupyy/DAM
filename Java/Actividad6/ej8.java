@@ -42,6 +42,7 @@ public class ej8 {
                 }else if((horas+incrementoH) > 24){
                 horas = 0;
                 horas+=incrementoH-1;
+                horas=horas%24;
                 }
             }else{
                 minutos+=incrementoM;
