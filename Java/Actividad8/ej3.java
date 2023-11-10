@@ -15,13 +15,13 @@ public class ej3 {
 
             //System.out.println(textoIn.charAt(0));
 
-            if (textoIn.charAt(textoIn.length()-1) == 'a' ||
-                textoIn.charAt(textoIn.length()-1) == 'e' ||
-                textoIn.charAt(textoIn.length()-1) == 'i' ||
-                textoIn.charAt(textoIn.length()-1) == 'o' ||
-                textoIn.charAt(textoIn.length()-1) == 'u') {
+            if (textoIn.charAt(0) == 'a' ||
+                textoIn.charAt(0) == 'e' ||
+                textoIn.charAt(0) == 'i' ||
+                textoIn.charAt(0) == 'o' ||
+                textoIn.charAt(0) == 'u') {
                 System.out.println("Vocal");
-            }else if (textoIn.charAt(textoIn.length()-1) != ' '){
+            }else if (textoIn.charAt(0) != ' '){
                 System.out.println("No vocal");
             }
 
