@@ -16,7 +16,7 @@ public class ej19 {
             }else{
                 intentos--;
             }
-        } while (esCorrecta == false && intentos > 0);
+        } while (!esCorrecta && intentos > 0);
 
         if(esCorrecta){
             System.out.println("Clave correcta");
