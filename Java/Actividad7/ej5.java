@@ -20,7 +20,7 @@ public class ej5 {
                     suspensos++;
                 }else if (nota >= 5 && nota<=10) {
                     apobados++;
-                    if(nota >=7 && nota<=8){
+                    if(nota >=7 && nota<9){
                         notable++;
                     }
                 }

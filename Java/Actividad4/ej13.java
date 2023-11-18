@@ -9,7 +9,7 @@ public class ej13 {
         num=sc.nextInt();
 
         for(int i = 1; i<=num; i++){
-            factorial = factorial*i;
+            factorial *= i;
         }
         System.out.println("El factorial es " + factorial);
     }

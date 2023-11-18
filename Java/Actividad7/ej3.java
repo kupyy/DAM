@@ -10,7 +10,7 @@ public class ej3 {
         System.out.println("Introduce el segundo numero:");
         int num2 = sc.nextInt();
 
-        if (num2<=num1) {
+        if (num2<num1) {
             System.out.println("Rango incorrecto");
         } else {
             while (num1<=num2) {
