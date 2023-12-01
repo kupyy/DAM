@@ -3,10 +3,7 @@ import java.util.Scanner;
 public class ej5 {
 
     public static double calcPorc(double precioDesc, double precioInicial){
-        double porcentaje;
-
-        porcentaje = 100-(precioDesc/precioInicial*100);
-
+        double porcentaje = 100-(precioDesc/precioInicial*100);
         return porcentaje;
     }
     public static void main(String[] args) {

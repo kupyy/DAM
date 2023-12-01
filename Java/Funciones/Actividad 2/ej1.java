@@ -12,7 +12,7 @@ public class ej1 {
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int n1, n2, n3;
+        int n1, n2, n3, mayor;
         System.out.println("Introduce el primer número");
         n1 = sc.nextInt();
         System.out.println("Introduce el segundo número");
@@ -20,10 +20,9 @@ public class ej1 {
         System.out.println("Introduce el tercer número");
         n3 = sc.nextInt();
 
-        int mayor = n1;
-        if (devuelveMayor(n2, n3) > n1) {
-            mayor = devuelveMayor(n2, n3);
-        }
+        mayor = devuelveMayor(n1, n2);
+        mayor = devuelveMayor(mayor, n3);
+        
 
         System.out.println("El número mayor es " + mayor);
     }

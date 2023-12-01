@@ -20,13 +20,12 @@ public class ej7 {
         do {
             System.out.println("introduce un numero");
             n=sc.nextInt();
-            if (n > 1) {
-                if (esPrimo(n)) {
-                    System.out.println("Es primo");
-                }else{
-                    System.out.println("No es primo");
-                }
+            if (esPrimo(n) && n > 1) {
+                System.out.println("Es primo");
+            }else{
+                System.out.println("No es primo");
             }
+
             
         } while (n>0);
     }
