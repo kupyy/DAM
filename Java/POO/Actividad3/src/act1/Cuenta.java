@@ -54,9 +54,8 @@ public class Cuenta {
 		int digUltima = Integer.parseInt(ultimaC);
 		digUltima++;
 		ultimaC = Integer.toString(digUltima);
-		int longC = ultimaC.length();
 		
-		for(int i = longC; i < 20; i++) {
+		while(ultimaC.length()<20) {
 			ultimaC = "0" + ultimaC;
 		}
 		
