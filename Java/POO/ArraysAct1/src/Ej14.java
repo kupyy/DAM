@@ -11,19 +11,16 @@ public class Ej14 {
 	}
 	
 	public static void main(String[] args) {
-		int tamaño = 1+2+3+4+5+6+7+8+9+10, n = 1;
+		int tamaño = 1+2+3+4+5+6+7+8+9+10, cont=0;
 		
 		int num[] = new int[tamaño];
 		
-		for(int i = 0; i < num.length; i++) {
-			for(int j = 0; j <= i; j++) {
-				num[i] = n;
-				System.out.print(n + " ");
+		for(int i = 0; i <= 10; i++) {
+			for(int j = i; j > 0; j--) {
+				num[cont] = i;
+				cont++;
 			}
-
-			n++;
 		}
-		System.out.println();
 		imprime(num);
 
 	}
