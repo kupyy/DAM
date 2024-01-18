@@ -7,7 +7,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		Libro libros[] = new Libro[5];
+		Libro libros[] = new Libro[2];
 //		Arrays.fill(libros, new Libro());
 		
 		
@@ -27,10 +27,20 @@ public class Main {
 			sc.nextLine();
 		}
 		
-		for(int i = 0; i < libros.length; i++) {
-			System.out.print(i + ": ");
-			libros[i].mostrar();
+		//clasificar
+		System.out.println("El libro " + libros[0].getTitulo() + " es de " + libros[1].clasificaLibro(libros[2]));
+			
+		//popular
+		if(libros[1].esPopular(libros[1])) {
+			System.out.println("El libro " + libros[1].getTitulo() + " es popular");			
+		}else {
+			System.out.println("El libro " + libros[1].getTitulo() + " no es popular");
 		}
+			
+		//comparar
+			
+		//
+
 
 	}
 
