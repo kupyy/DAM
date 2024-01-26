@@ -5,7 +5,7 @@ public class Main {
 	Fecha f = new Fecha(25, 2, 2006);
 	Persona p = new Persona("Juan Pedro", "C/ Putero, 33", 11630, "Arcos de la Frontera", f);
 
-	System.out.println(p.esMayorDeEdad());
+	System.out.println(p);
 	
 	}
 }

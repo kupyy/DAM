@@ -77,5 +77,12 @@ public class Persona {
 		
 		return esMayor;
 	}
+
+	@Override
+	public String toString() {
+		return "Nombre: " + nombre + "\nFecha nacimiento: " + fechaNacimiento + "\nDireccion: " + direccion + "\n" + codigoPostal + " " + ciudad;
+	}
+	
+	
 	
 }
