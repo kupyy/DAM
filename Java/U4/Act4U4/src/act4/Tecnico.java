@@ -8,6 +8,6 @@ public class Tecnico extends Operario {
 
 	@Override
 	public String toString() {
-		return "Empleado " + nombre + "-> Operario -> Tecnico";
+		return super.toString() + " -> Tecnico";
 	}
 }

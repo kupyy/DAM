@@ -1,6 +1,6 @@
 package act3;
 
-public class Fraccion {
+public class Fraccion implements Relacionable, Comparable<Fraccion>{
 	private int num, den;
 	
 	public Fraccion() {
@@ -14,7 +14,7 @@ public class Fraccion {
 	}
 
 	
-	public static int mcm(int a, int b) {
+	public int mcm(int a, int b) {
 		int res = 0;
 		
 		while(!(res % a == res % b && res != 0)) {
@@ -24,18 +24,21 @@ public class Fraccion {
 		return res;
 	}
 	
-	public static int mcd(int a , int b) {
-		int res = 1;
-		
-		while(a % res != b % res && res > a && res > b) {
-			System.out.println(a%res);
-			System.out.println(b%res);
-			res++;
-		}
-		
+	public int mcd(int a, int b) {
+		int res = 0;
+		while (b != 0) {
+			res = b;
+	        b = a % b;
+	        a = res;
+	    }
 		return res;
 	}
 	
+	public void simplificar() {
+		int maxCd = mcd(this.getDen(), this.getNum());
+		this.setDen(this.getDen()/maxCd);
+		this.setNum(this.getNum()/maxCd);
+	}
 	
 	public int getNum() {
 		return num;
@@ -104,4 +107,51 @@ public class Fraccion {
 		return res;
 		
 	}
+
+	@Override
+	public boolean esMayorQue(Relacionable a) {
+		this.simplificar();
+		((Fraccion)a).simplificar();
+		
+		return ((Fraccion)a).getDen() < (this.getDen()) && ((Fraccion)a).getNum() < this.getNum();
+	}
+
+	@Override
+	public boolean esMenorQue(Relacionable a) {
+		this.simplificar();
+		((Fraccion)a).simplificar();
+		
+		return ((Fraccion)a).getDen() > (this.getDen()) && ((Fraccion)a).getNum() > this.getNum();
+	}
+
+	@Override
+	public boolean esIgualQue(Relacionable a) {
+		this.simplificar();
+		((Fraccion)a).simplificar();
+		
+		return ((Fraccion)a).getDen() == (this.getDen()) && ((Fraccion)a).getNum() == this.getNum();
+	}
+
+	@Override
+	public String toString() {
+		return num + "/" + den;
+	}
+
+	@Override
+	public int compareTo(Fraccion o) {
+		int res = 0;
+		
+		if(this.esMayorQue(o)) {
+			res = 1;
+		}else if(this.esIgualQue(o)) {
+			res = 0;
+		}else {
+			res = -1;
+		}
+		
+		return res;
+	}
+	
+	
+	
 }
